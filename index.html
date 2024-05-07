@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@100..700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="src/styles/global.css">
+    <link rel="stylesheet" href="src/styles/cadastro.css">
+    <link rel="stylesheet" href="src/styles/login.css">
+    <title>Login</title>
+</head>
+<body>
+    <main>
+        <section>
+           
+            <form>
+                <div class="LoginRegistroDiv">
+                    <button id="login">Login</button>
+                    <button id="Cadastro">Cadastro</button>
+                </div>
+
+                <div class="slider"></div>
+
+                <div class="loginForm">
+
+                    <div class="iconsFormLogin">
+                        <div>
+                            <i class="fa-brands fa-google-plus-g"></i>
+                        </div>
+                        <div>
+                            <i class="fa-brands fa-facebook-f"></i>
+                        </div>
+                        <div>
+                            <i class="fa-brands fa-linkedin-in"></i>
+                        </div>
+                    </div>
+
+                    <p>Ou entre na sua conta</p>
+
+                    <div class="emailDiv">
+                        <label for="emailLogin" class="LabelEmailLogin">Email</label>
+                        <input type="text" name="emailLogin" id="emailLogin" class="inputEmailLogin">
+                    </div>
+                    <div class="passwordDiv">
+                        <label for="senhaLogin" class="LabelSenhaLogin">Senha</label>
+                        <input type="password" name="senhaLogin" id="senhaLogin" class="senha">
+                    </div>
+                    <div class="checkBoxDiv">
+                        <input type="checkbox" id="ShowPassordLogin">
+                        <p>Mostrar Senha</p>
+                    </div>
+                    <div class="buttonLoginDiv">
+                        <button type="submit" disabled="true" class="butonFazerLogin">Entrar</button>
+                        <button class="EsqueceuSenha">Esqueceu a Senha?</button>
+                    </div>
+                    
+                </div>
+
+                
+                <div class="RegisterForm">
+                
+                    <div class="iconsFormRegister">
+                        <div>
+                            <i class="fa-brands fa-google-plus-g"></i>
+                        </div>
+                        <div>
+                            <i class="fa-brands fa-facebook-f"></i>
+                        </div>
+                        <div>
+                            <i class="fa-brands fa-linkedin-in"></i>
+                        </div>
+                    </div>
+
+                    <p>Ou utilize o seu email</p>
+
+                    <div class="emailDiv">
+                        <label for="emailRegister" class="LabelEmailRegistro">Email</label>
+                        <input type="text" name="emailRegister" id="emailRegister" class="inputEmailRegister">
+                    </div>
+                    <div class="passwordDiv">
+                        <label for="senhaRegister" class="LabelSenhaRegistro">Senha</label>
+                        <input type="password" name="senhaRegister" id="senhaRegister" class="senhaRegister">
+                    </div>
+                    <div class="ConfirmpasswordDiv">
+                        <label for="Confirmpassword" class="LabelConfirmSenha">Confirmar senha</label>
+                        <input type="password" name="Confirmpassword" id="Confirmpassword" class="Confirmpassword">
+                    </div>
+                    <div class="checkBoxDiv">
+                        <input type="checkbox" id="ShowPassordRegister">
+                        <p>Mostrar Senha</p>
+                    </div>
+                    <div class="buttonRegistrarDiv">
+                        <button type="submit" disabled="true" class="butonCadastrar">Registrar</button>
+                    </div>
+                    
+                </div>
+            </form>
+            <aside>
+                <img src="src/assets/Mobile login-rafiki.png" alt="">
+                <p class="error" id="EmailObrigatorioError">Email não pode estar vazio.</p>
+                <p class="error" id="SenhaObrigatorioError">Senha não pode estar vazio.</p>
+                <p class="error" id="confirmPasswordDoesntMatchError">Senha e Confirmar senha devem ser iguais.</p>
+            </aside>
+        </section>
+    </main>
+</body>
+    <script src="src/scripts/index.js"></script>
+    <script src="src/scripts/error.js"></script>
+    <script src="src/scripts/login.js"></script>
+    <script src="src/scripts/cadastro.js"></script>
+    <script src="https://kit.fontawesome.com/3ddb97f589.js" crossorigin="anonymous"></script>
+</html>
