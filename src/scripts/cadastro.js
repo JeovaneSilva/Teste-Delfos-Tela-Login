@@ -4,9 +4,17 @@ const RegisterForm = document.querySelector('.RegisterForm')
 const ShowPassordRegister = document.querySelector('#ShowPassordRegister')
 const butonCadastrar = document.querySelector('.butonCadastrar')
 
+var Users = JSON.parse(localStorage.getItem("logins")) || [];
+
 butonCadastrar.addEventListener('click', (e) => {
-    e.preventDefault();
-    console.log("teste")
+    e.preventDefault()
+   
+   Users.push([inputEmailRegister.value, senhaRegister.value]);
+
+   localStorage.setItem("logins", JSON.stringify(Users));
+    alert("Cadastro feito com sucesso")
+    inputEmailRegister.value=""
+    senhaRegister.value=""
 })
 
 ShowPassordRegister.addEventListener('change', () => {

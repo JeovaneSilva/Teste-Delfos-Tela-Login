@@ -2,7 +2,9 @@
 const email = document.querySelector('.inputEmailLogin')
 const senhaInput = document.querySelector('.senha')
 const Confirmpassword = document.querySelector('.Confirmpassword')
-
+const erros = [...document.querySelectorAll(".error")]
+const errosMobile = [...document.querySelectorAll(".errorMobile")]
+const labels = [...document.getElementsByTagName("label")]
 const slider = document.querySelector('.slider')
 const btnCadastro = document.querySelector('#Cadastro')     
 const btnlogin = document.querySelector('#login')
@@ -14,6 +16,18 @@ btnCadastro.addEventListener('click', (e) => {
     slider.style.right="-50px"
     RegisterForm.style.display="flex"
     loginForm.style.display="none"
+
+    erros.map((error) => {
+        error.style.display="none"
+    })
+
+    errosMobile.map((errorMobile) => {
+        errorMobile.style.display="none"
+    })
+    
+    labels.map((label) => {
+        label.style.color="black"
+    })
 })
 
 btnlogin.addEventListener('click', (e) => {
@@ -24,6 +38,18 @@ btnlogin.addEventListener('click', (e) => {
 
     RegisterForm.style.display="none"
     loginForm.style.display="flex"
+
+    erros.map((error) => {
+        error.style.display="none"
+    })
+
+    errosMobile.map((errorMobile) => {
+        errorMobile.style.display="none"
+    })
+
+    labels.map((label) => {
+        label.style.color="black"
+    })
 
 })
 

@@ -14,7 +14,20 @@ senhaInput.addEventListener('change', () => {
 
 butonFazerLogin.addEventListener('click', (e) => {
     e.preventDefault();
-    console.log("teste")
+
+    var Users = JSON.parse(localStorage.getItem("logins")) || [];
+
+    var found = Users.some(function(login) {
+        return login[0] === email.value && login[1] === senhaInput.value;
+    });
+
+    if (found) {
+        window.location.href = "../../home.html";
+    } else {
+        alert("Login inválido. Por favor, verifique seus dados.")
+        LabelSenhaLogin.style.color ="red"
+        LabelEmailLogin.style.color ="red"
+    }
 })
 
 ShowPassordLogin.addEventListener('change', () => {
