@@ -134,11 +134,10 @@ label{
     .error{
         display: none;
     }
-    
+
     section{
         width: 300px;
         height: 80vh;
-        justify-content: center;
     }
 
     img {
