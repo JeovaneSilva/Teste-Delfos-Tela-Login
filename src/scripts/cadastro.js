@@ -15,6 +15,8 @@ butonCadastrar.addEventListener('click', (e) => {
     alert("Cadastro feito com sucesso")
     inputEmailRegister.value=""
     senhaRegister.value=""
+    Confirmpassword.value=""
+
 })
 
 ShowPassordRegister.addEventListener('change', () => {

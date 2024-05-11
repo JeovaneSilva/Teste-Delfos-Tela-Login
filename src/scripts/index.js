@@ -17,6 +17,9 @@ btnCadastro.addEventListener('click', (e) => {
     RegisterForm.style.display="flex"
     loginForm.style.display="none"
 
+    email.value=""
+    senhaInput.value=""
+
     erros.map((error) => {
         error.style.display="none"
     })
@@ -38,6 +41,10 @@ btnlogin.addEventListener('click', (e) => {
 
     RegisterForm.style.display="none"
     loginForm.style.display="flex"
+
+    inputEmailRegister.value=""
+    senhaRegister.value=""
+    Confirmpassword.value=""
 
     erros.map((error) => {
         error.style.display="none"
