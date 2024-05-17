@@ -4,6 +4,7 @@
 
 Teste técnico de uma tela de Login feito para uma seleção de estágio, o desafio era criar uma tela de Login básica com um formulário para entrada de usuário e senha.
 
+-  [x]  Projeto concluído.
 * Disponível em [Tela de Login](https://teste-login-cadastro.netlify.app/).
 * Utilização de HTML para criar a estrutura básica da página, como formulários e elementos de entrada.
 * Utilização de CSS para tornar a tela mais atrativa e reponsiva.
